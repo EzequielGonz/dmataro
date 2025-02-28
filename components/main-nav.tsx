@@ -10,20 +10,8 @@ import {
 import { cn } from "@/lib/utils"
 import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu"
 
-const links = [
-  {
-    title: "CATÁLOGO",
-    href: "/catalogo",
-  },
-  {
-    title: "NOSOTROS",
-    href: "/nosotros",
-  },
-  {
-    title: "CONTACTO",
-    href: "/contacto",
-  },
-]
+// Array de enlaces vacío ya que no tendremos ningún enlace en el nav
+const links: { title: string; href: string }[] = []
 
 export function MainNav() {
   return (

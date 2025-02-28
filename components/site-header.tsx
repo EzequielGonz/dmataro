@@ -49,7 +49,7 @@ export function SiteHeader() {
             {/* Cart */}
             <NavUtils />
 
-            {/* Mobile menu button */}
+            {/* Mobile menu button - Lo mantenemos pero sin contenido */}
             <Sheet>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon" className="md:hidden">
@@ -60,26 +60,8 @@ export function SiteHeader() {
                 <SheetHeader className="mb-4">
                   <SheetTitle>Menú</SheetTitle>
                 </SheetHeader>
-                <nav className="flex flex-col gap-4">
-                  <Link
-                    href="/catalogo"
-                    className="flex items-center text-lg font-medium hover:text-primary transition-colors"
-                  >
-                    CATÁLOGO
-                  </Link>
-                  <Link
-                    href="/nosotros"
-                    className="flex items-center text-lg font-medium hover:text-primary transition-colors"
-                  >
-                    NOSOTROS
-                  </Link>
-                  <Link
-                    href="/contacto"
-                    className="flex items-center text-lg font-medium hover:text-primary transition-colors"
-                  >
-                    CONTACTO
-                  </Link>
-                </nav>
+                {/* Menú móvil vacío */}
+                <nav className="flex flex-col gap-4"></nav>
               </SheetContent>
             </Sheet>
           </div>
